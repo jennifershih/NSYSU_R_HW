@@ -1,8 +1,8 @@
 #練習:
 #1. 請匯入practice.xlsx並呈現在視窗中。
-install.packages("readxl")
-library("readxl")
-practice = read_excel("/Users/jennifershih/Downloads/Practice.xlsx")
+if (!requireNamespace("readxl", quietly = TRUE)) install.packages("readxl")
+library(readxl)
+practice = read_excel("data/Practice.xlsx")
 practice
 
 #2.	請將Years to Maturity重新命名為Years。
